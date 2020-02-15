@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    <Button
+        android:id="@+id/lightOn"
+        android:onClick="lightOnClick"
+        android:text="電燈開"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/lightOff"
+        android:layout_toRightOf="@+id/lightOn"
+        android:onClick="lightOffClick"
+        android:text="電燈關"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/air25"
+        android:layout_below="@+id/lightOn"
+        android:onClick="air25Click"
+        android:text="25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/air26"
+        android:layout_toRightOf="@+id/air25"
+        android:layout_below="@+id/lightOn"
+        android:onClick="air26Click"
+        android:text="26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/air27"
+        android:layout_toRightOf="@+id/air26"
+        android:layout_below="@+id/lightOn"
+        android:onClick="air27Click"
+        android:text="27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/air28"
+        android:layout_toRightOf="@+id/air27"
+        android:layout_below="@+id/lightOn"
+        android:onClick="air28Click"
+        android:text="28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/airOff"
+        android:layout_below="@+id/air25"
+        android:onClick="airOffClick"
+        android:text="冷氣關"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/tvPower"
+        android:layout_below="@+id/airOff"
+        android:onClick="tvPowerClick"
+        android:text="電視開關"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/key7"
+        android:layout_below="@+id/tvPower"
+        android:onClick="key7Click"
+        android:text="7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/key8"
+        android:layout_toRightOf="@+id/key7"
+        android:layout_below="@+id/tvPower"
+        android:onClick="key8Click"
+        android:text="8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/key9"
+        android:layout_toRightOf="@+id/key8"
+        android:layout_below="@+id/tvPower"
+        android:onClick="key9Click"
+        android:text="9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/key4"
+        android:layout_below="@+id/key7"
+        android:onClick="key4Click"
+        android:text="4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/key5"
+        android:layout_toRightOf="@+id/key4"
+        android:layout_below="@+id/key7"
+        android:onClick="key5Click"
+        android:text="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/key6"
+        android:layout_toRightOf="@+id/key5"
+        android:layout_below="@+id/key7"
+        android:onClick="key6Click"
+        android:text="6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/key1"
+        android:layout_below="@+id/key4"
+        android:onClick="key1Click"
+        android:text="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/key2"
+        android:layout_toRightOf="@+id/key1"
+        android:layout_below="@+id/key4"
+        android:onClick="key2Click"
+        android:text="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/key3"
+        android:layout_toRightOf="@+id/key2"
+        android:layout_below="@+id/key4"
+        android:onClick="key3Click"
+        android:text="3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/key0"
+        android:layout_below="@+id/key1"
+        android:onClick="key0Click"
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/channelUp"
+        android:layout_below="@+id/key0"
+        android:onClick="channelUpClick"
+        android:text="上一台"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/channelDown"
+        android:layout_toRightOf="@+id/channelUp"
+        android:layout_below="@+id/key0"
+        android:onClick="channelDownClick"
+        android:text="下一台"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/volumnUp"
+        android:layout_below="@+id/channelUp"
+        android:onClick="volumnUpClick"
+        android:text="音量大"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/volumnDown"
+        android:layout_toRightOf="@+id/volumnUp"
+        android:layout_below="@+id/channelUp"
+        android:onClick="volumnDownClick"
+        android:text="音量小"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
